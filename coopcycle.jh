@@ -1,0 +1,78 @@
+
+entity Cooperative {
+	ID Long required
+	Name String minlength(3)
+    Phone String minlength(10) maxlength(10)
+    Address String required
+    WebURL String
+}
+
+entity Customer {
+	ID Long required
+    Name String
+    Surname String
+    Phone String minlength(10) maxlength(10)
+    Address String required
+}
+
+entity DeliveryPerson {
+	ID Long required
+    Name String required
+    Surname String required
+    Phone String minlength(10) maxlength(10)
+    VehiculeType String
+    Latitude Float required
+    Longitude Float required
+}
+
+entity Course{
+	ID Long required
+    IDDeliveryPerson Long required
+}
+
+entity Order{
+	IDOrder Long required
+    IDCoop Integer required
+    IDCustomer Integer required
+    IDCourse Integer required
+    Price Integer min(3) max(300)
+    Date ZonedDateTime
+    OrderState State
+}
+
+entity Product{
+	IDProduct Long required
+    IDMenu Long required
+    Name String
+    Price Float
+    Stock Integer min(0)
+}
+
+entity Payment {
+	Method PaymentMethod required
+    Ammount Integer required
+}
+
+enum PaymentMethod{
+	CB, PAYPAL
+}
+
+enum State {
+    Ordered, Paid, Cooking, PickedUp, OnTheWay, Delivered
+}
+
+relationship OneToOne {
+    Course to Order
+    Payment to Order
+}
+
+relationship OneToMany {
+	Cooperative to Product
+    Menu to Product
+	Customer to Order
+    DeliveryPerson to Course
+    Cooperative{order} to Order{cooperative}
+    Order to Product
+}
+
+dto * with mapstruct
