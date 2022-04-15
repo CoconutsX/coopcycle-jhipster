@@ -1,0 +1,31 @@
+{
+  "coopcycleApp": {
+    "deliveryPerson": {
+      "home": {
+        "title": "DeliveryPeople",
+        "refreshListLabel": "Actualiser la liste",
+        "createLabel": "Créer un nouveau Delivery Person",
+        "createOrEditLabel": "Créer ou éditer un Delivery Person",
+        "notFound": "Aucun Delivery Person trouvé"
+      },
+      "created": "Un nouveau Delivery Person a été créé avec l'identifiant {{ param }}",
+      "updated": "Le Delivery Person avec l'identifiant {{ param }} a été mis à jour",
+      "deleted": "Le Delivery Person avec l'identifiant {{ param }} a été supprimé",
+      "delete": {
+        "question": "Êtes-vous certain de vouloir supprimer le Delivery Person {{ id }} ?"
+      },
+      "detail": {
+        "title": "Delivery Person"
+      },
+      "id": "ID",
+      "iD": "I D",
+      "name": "Name",
+      "surname": "Surname",
+      "phone": "Phone",
+      "vehiculeType": "Vehicule Type",
+      "latitude": "Latitude",
+      "longitude": "Longitude",
+      "course": "Course"
+    }
+  }
+}

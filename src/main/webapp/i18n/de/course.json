@@ -1,0 +1,27 @@
+{
+  "coopcycleApp": {
+    "course": {
+      "home": {
+        "title": "Courses",
+        "refreshListLabel": "Liste aktualisieren",
+        "createLabel": "Course erstellen",
+        "createOrEditLabel": "Course erstellen oder bearbeiten",
+        "notFound": "Keine Courses gefunden"
+      },
+      "created": "Course erstellt mit ID {{ param }}",
+      "updated": "Course aktualisiert mit ID {{ param }}",
+      "deleted": "Course gelöscht mit ID {{ param }}",
+      "delete": {
+        "question": "Soll Course {{ id }} wirklich dauerhaft gelöscht werden?"
+      },
+      "detail": {
+        "title": "Course"
+      },
+      "id": "ID",
+      "iD": "I D",
+      "iDDeliveryPerson": "I D Delivery Person",
+      "order": "Order",
+      "deliveryPerson": "Delivery Person"
+    }
+  }
+}

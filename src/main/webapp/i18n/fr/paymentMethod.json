@@ -1,0 +1,9 @@
+{
+  "coopcycleApp": {
+    "PaymentMethod": {
+      "null": "",
+      "CB": "CB",
+      "PAYPAL": "PAYPAL"
+    }
+  }
+}

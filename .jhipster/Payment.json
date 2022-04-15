@@ -1,0 +1,35 @@
+{
+  "applications": "*",
+  "changelogDate": "20220415134140",
+  "dto": "mapstruct",
+  "embedded": false,
+  "entityTableName": "payment",
+  "fields": [
+    {
+      "fieldName": "method",
+      "fieldType": "PaymentMethod",
+      "fieldValidateRules": ["required"],
+      "fieldValues": "CB,PAYPAL"
+    },
+    {
+      "fieldName": "ammount",
+      "fieldType": "Integer",
+      "fieldValidateRules": ["required"]
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "Payment",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "order",
+      "otherEntityRelationshipName": "payment",
+      "ownerSide": true,
+      "relationshipName": "order",
+      "relationshipType": "one-to-one"
+    }
+  ],
+  "service": "serviceClass"
+}
