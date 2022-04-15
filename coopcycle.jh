@@ -68,7 +68,6 @@ relationship OneToOne {
 
 relationship OneToMany {
 	Cooperative to Product
-    Menu to Product
 	Customer to Order
     DeliveryPerson to Course
     Cooperative{order} to Order{cooperative}
